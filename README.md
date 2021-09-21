@@ -5,4 +5,4 @@ chúng tôi không dùng mã nguồn gốc vì chúng có những tài khoản b
 
 #### Tính năng
 
-Cách tính năng của nó được sao chép từ bot rose.
+Cách tính năng của nó được sao chép từ bot [rose](https://missrose.org/guide/getting-started/adding-rose/).
