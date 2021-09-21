@@ -1,5 +1,5 @@
 #### NOTE
-This source code is developed based on the source code, [MT-Rose](https://github.com/forks/MRK-YT/MT-Rose-Bot-Model)! 
+This source code is developed based on the source code, [MT-Rose](https://github.com/MRK-YT/MT-Rose-Bot-Model)! 
 
 we don't use the original code because they have backdoor accounts that help control the bot, we removed it and built it into a complete bot
 #### Feature
