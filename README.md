@@ -1,8 +1,13 @@
 #### NOTE
-Mã nguồn nà được phát triển dựa trên mã nguồn, [MT-Rose](https://github.com/forks/MRK-YT/MT-Rose-Bot-Model)! 
+This source code is developed based on the source code, [MT-Rose](https://github.com/forks/MRK-YT/MT-Rose-Bot-Model)! 
 
-chúng tôi không dùng mã nguồn gốc vì chúng có những tài khoản backdoor giúp kiểm soát bot, chúng tôi đã tiến hành loại bỏ nó và xây dựng thành 1 con bot hoàn chỉnh
+we don't use the original code because they have backdoor accounts that help control the bot, we removed it and built it into a complete bot
+#### Feature
 
-#### Tính năng
+How its features are copied from bots [rose](https://missrose.org/guide/getting-started/adding-rose/).
 
-Cách tính năng của nó được sao chép từ bot [rose](https://missrose.org/guide/getting-started/adding-rose/).
+### Deploy
+
+One Click!
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vncloudsco/Rose)
