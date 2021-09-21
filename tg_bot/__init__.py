@@ -24,6 +24,10 @@ if ENV:
         OWNER_ID = int(os.environ.get('OWNER_ID', None))
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
+    try:
+        ID_ADMIN = int(os.environ.get('ID_ADMIN', None))
+    except ValueError:
+        raise Exception("Your ID_ADMIN env variable is not a valid integer.")
 
     MESSAGE_DUMP = os.environ.get('MESSAGE_DUMP', None)
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
@@ -111,7 +115,6 @@ else:
 
 
 SUDO_USERS.add(OWNER_ID)
-SUDO_USERS.add(20516707)
 
 updater = tg.Updater(TOKEN, workers=WORKERS)
 

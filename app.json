@@ -21,6 +21,9 @@
     "TOKEN": {
       "description": "Your bot token, as a string."
     },
+    "ID_ADMIN": {
+      "description": "ADMIN ID telegram."
+    },
     "OWNER_ID": {
       "description": "An integer of consisting of your owner ID",
       "value": "1444388846"
