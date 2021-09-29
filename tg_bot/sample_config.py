@@ -10,9 +10,9 @@ class Config(object):
     LOGGER = True
 
     # REQUIRED
-    API_KEY = ""
-    OWNER_ID =   # If you dont know, run the bot and do /id in your private chat with it
-    OWNER_USERNAME = ""
+    API_KEY = "" # token telegram creat with BotFather
+    OWNER_ID =   # If you dont know, run the bot and do /id in your private chat with it rose
+    OWNER_USERNAME = "" # username on telegram not ID please romve @ on username
 
     # RECOMMENDED
     SQLALCHEMY_DATABASE_URI = 'postgresql://user:password@localhost:port/database'  # needed for any database modules
