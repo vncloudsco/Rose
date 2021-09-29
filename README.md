@@ -7,7 +7,7 @@ simple to use.
 
 To deploy me on heroku, use below button:
 
-### Deploy
+### Deploy With Docker
 
 ```
 docker-compose up -d -f docker-compose-postgresql.yml
