@@ -11,28 +11,25 @@ def can_delete(chat: Chat, bot_id: int) -> bool:
 
 
 def is_user_ban_protected(chat: Chat, user_id: int, member: ChatMember = None) -> bool:
-    if user_id in SUDO_USERS:
-        return True
-
+    
     if chat.type == 'private' \
             or user_id in SUDO_USERS \
-            or user_id in WHITELIST_USERS \
-            or chat.all_members_are_administrators:
+            or user_id in WHITELIST_USERS:
+            # or chat.all_members_are_administrators:
         return True
 
     if not member:
         member = chat.get_member(user_id)
+        
     return member.status in ('administrator', 'creator')
 
 
 def is_user_admin(chat: Chat, user_id: int, member: ChatMember = None) -> bool:
 
+    # if chat.type == 'private' \
+    #         or user_id in SUDO_USERS:
+    #     return True
     if user_id in SUDO_USERS:
-        return True
-
-    if chat.type == 'private' \
-            or user_id in SUDO_USERS \
-            or chat.all_members_are_administrators:
         return True
 
     if not member:
@@ -40,9 +37,10 @@ def is_user_admin(chat: Chat, user_id: int, member: ChatMember = None) -> bool:
     return member.status in ('administrator', 'creator')
 
 
+
 def is_bot_admin(chat: Chat, bot_id: int, bot_member: ChatMember = None) -> bool:
-    if chat.type == 'private' \
-            or chat.all_members_are_administrators:
+    if chat.type == 'private':
+            # or chat.all_members_are_administrators:
         return True
 
     if not bot_member:

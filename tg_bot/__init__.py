@@ -17,6 +17,7 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 6:
     quit(1)
 
 ENV = bool(os.environ.get('ENV', False))
+ENV = False
 
 if ENV:
     TOKEN = os.environ.get('TOKEN', None)
@@ -24,10 +25,6 @@ if ENV:
         OWNER_ID = int(os.environ.get('OWNER_ID', None))
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
-    try:
-        ID_ADMIN = int(os.environ.get('ID_ADMIN', None))
-    except ValueError:
-        raise Exception("Your ID_ADMIN env variable is not a valid integer.")
 
     MESSAGE_DUMP = os.environ.get('MESSAGE_DUMP', None)
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
@@ -68,7 +65,7 @@ if ENV:
         BMERNU_SCUT_SRELFTI = None
 
 else:
-    from tg_bot.config import Development as Config
+    from tg_bot.sample_config import Development as Config
     TOKEN = Config.API_KEY
     try:
         OWNER_ID = int(Config.OWNER_ID)

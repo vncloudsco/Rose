@@ -143,6 +143,10 @@ def unlock(bot: Bot, update: Update, args: List[str]) -> str:
     chat = update.effective_chat  # type: Optional[Chat]
     user = update.effective_user  # type: Optional[User]
     message = update.effective_message  # type: Optional[Message]
+
+    # message.reply_text("admin: %s" % str(is_user_admin(chat, message.from_user.id)))
+
+
     if is_user_admin(chat, message.from_user.id):
         if len(args) >= 1:
             if args[0] in LOCK_TYPES:
