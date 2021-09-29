@@ -19,8 +19,8 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-*Xin chào {}*
-*Gõ /help để biết thêm các thông tin*
+*Hello {}*
+*type /help for more information*
 
 """
 
