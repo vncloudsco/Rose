@@ -9,11 +9,13 @@ To deploy me on heroku, use below button:
 
 ### Deploy With Docker
 
+start postgresql
+
 ```
 docker-compose up -d -f docker-compose-postgresql.yml
 
 ```
-replace your IP and config in file `tg_bot/sample_config.py` Read below for more information
+replace your IP and config in file `tg_bot/sample_config.py` Read below for more information. start bot
 ```
 docker build -t name_container .
 docker run -it -d -p 5000:5000 name_container
